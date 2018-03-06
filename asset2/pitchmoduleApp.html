@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>WebAudioAPI</title>
+
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+  <!-- bootstrap cdn -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/notes.js"></script>
+  <script src="assets/js/pitchmodule.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/inp_custom_tone.js"></script>
+  <!-- <script src="/assets/js/tone.js"></script> -->
+
+
+
+  <style type="text/css">
+  img{
+    background:white;
+    padding:10px;
+    padding-left:25px;
+    padding-right:25px;
+    box-shadow:0px 0px 20px #ddd;
+    border-radius:5px;
+  }
+  body{
+    background:#eee;
+  }
+    #canvas-container {
+        width: 100%;
+        text-align:center;
+  }
+  }
+  }
+
+  canvas {
+     display: inline;
+  }
+  </style>
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #aaf">
+    <a class="navbar-brand" href="#" style="color:white"><font size="6" family = "cursive"> ODIO </font></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 40%">
+      <ul class="navbar-nav mr-auto">
+       <li class="nav-item active">
+         <a class="nav-link" href="#"> <button class="btn btn-light" style="background:none;color: white" >  PITCH  </button><span class="sr-only">(current)</span></a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="#"> <button class="btn btn-light " style="background:none;color: white"> BEAT </button></a>
+       </li>
+      </ul>
+    </div>
+  </nav>
+
+
+<div> 
+
+<p style="margin-top: 3%">
+ </p>
+</div>
+
+<div id="canvas-container">
+   <canvas id="display" width="1000" height="200"  style="border:1px solid #d3d3d3; background-color: lightgray"></canvas>
+
+</div>
+<br>
+
+  
+  <div id="output"></div>
+  
+<!-- 
+  <button onclick="toggle_animation()" id="button">Toggle</button>
+  <div id="playPause" style="display: none;">1</div>
+  <button onclick="play_sound()" id="play">Play/Pause</button>
+-->
+  
+  <div style="margin-left: 40%">
+
+  <img onclick="toggle_animation()" id="button" src="templates/Static/start.png" style="width:70px;height:40px; margin-right: 5%">
+  <div id="playPause" style="display: none;">1</div>
+  <img onclick="play_sound()" id="play" src="templates/Static/play.png" style="width:70px;height:40px;  margin-right: 5%">
+  <img onclick="location.reload()" id="restart" src="templates/Static/refresh.png" style="width:70px;height:40px;">
+
+</div>
+
+
+
+</body>
+</html>
