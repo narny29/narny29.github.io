@@ -1,7 +1,7 @@
 /* keras js model for beat type prediction */
 function classify_and_compose(input, process_output, curr_time){
 	/* init */
-	let model_path =  '/assets/models/model.bin';
+	let model_path =  '/asset1/assets/models/model.bin';
 
 	/* create new model predictor */
 	predictor_model = new KerasJS.Model({
