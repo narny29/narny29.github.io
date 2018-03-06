@@ -1,7 +1,7 @@
-var sounds = [	new Audio('/assets/sounds/Dry-Kick.wav'), 
-				new Audio('/assets/sounds/Bamboo.WAV'),
-				new Audio('/assets/sounds/lg_snare.WAV'),  
-				new Audio('/assets/sounds/Clap-1.wav')];
+var sounds = [	new Audio('/asset1/assets/sounds/Dry-Kick.wav'), 
+				new Audio('/asset1/assets/sounds/Bamboo.WAV'),
+				new Audio('/asset1/assets/sounds/lg_snare.WAV'),  
+				new Audio('/asset1/assets/sounds/Clap-1.wav')];
 
 var aud_map = [0,1,2,3];
 
