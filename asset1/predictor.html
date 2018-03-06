@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WebAudioAPI</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+	<script src="assets/js/keras.min.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+
+	<script src="assets/js/init.js"></script>
+	<script src="assets/js/core.js"></script>
+	<script src="assets/js/viewport.js"></script>
+	<script src="assets/js/predictor.js"></script>
+	<script src="assets/js/sounds.js"></script>
+	<script src="assets/js/main.js"></script>
+</head>
+<body>
+<div class="header">ODIO</div>
+
+<div class="view_panel">
+	<div class="buttons_panel">
+		<button id="record_button" onclick = "toggle_recorder()"><img src="assets/images/record.png"></button>
+		<button id="play_button" onclick = "toggle_player()"><img src="assets/images/play.png"></button>
+	</div>
+
+
+	<div id="viewport">
+		<div id="visualizer">
+		 	<canvas width="300px" height="100px" id="board"></canvas>
+		</div>
+		<div class = "kit">
+			<div class="time_series" id="beat_output_0">
+			</div>
+		</div>
+		<div class = "kit">
+			<div class="time_series" id="beat_output_1">
+			</div>
+		</div>
+		<div class = "kit">
+			<div class="time_series" id="beat_output_2">
+			</div>
+		</div>
+	</div>
+
+	<div class="output_selector">
+		<div class="audio_out" id="output_0_0">&#9938</div>
+		<div class="audio_out" id="output_0_1">&#9947</div>
+		<div class="audio_out" id="output_0_2">&#9955</div>
+		<div class="audio_out" id="output_0_3">&#9902</div>
+
+		<div class="audio_out" id="output_1_0">&#9938</div>
+		<div class="audio_out" id="output_1_1">&#9947</div>
+		<div class="audio_out" id="output_1_2">&#9955</div>
+		<div class="audio_out" id="output_1_3">&#9902</div>
+
+		<div class="audio_out" id="output_2_0">&#9938</div>
+		<div class="audio_out" id="output_2_1">&#9947</div>
+		<div class="audio_out" id="output_2_2">&#9955</div>
+		<div class="audio_out" id="output_2_3">&#9902</div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -119,7 +119,7 @@ function toggle_recorder(){
 		REC_LENGTH = parseInt(Date.now()/TIME_DIVISIONS - START_TIME);
 
 		/* update status */
-		$( "#record_button" ).html( '<img src="assets/images/record.png">' );
+		$( "#record_button" ).html( '<img src="/asset1/assets/images/record.png">' );
 		recording = false;
 	}else{
 		/* stop playing first*/
@@ -136,7 +136,7 @@ function toggle_recorder(){
 		listen_loop();
 
 		/* update status */
-		$( "#record_button" ).html( '<img src="assets/images/stop.png">' );
+		$( "#record_button" ).html( '<img src="/asset1/assets/images/stop.png">' );
 		recording = true;
 	}
 }
@@ -149,7 +149,7 @@ function toggle_player(){
 
 		/* updates */
 		playing = false;
-		$('#play_button').html('<img src="assets/images/play.png">');
+		$('#play_button').html('<img src="/asset1/assets/images/play.png">');
 	}else{
 		/* stop recording */
 		if ( recording ) toggle_recorder();
@@ -171,7 +171,7 @@ function toggle_player(){
 			loop = setInterval(play_loop, TIME_DIVISIONS);
 
 			/* updates */
-			$('#play_button').html('<img src="assets/images/pause.png">');
+			$('#play_button').html('<img src="/asset1/assets/images/pause.png">');
 			playing = true;
 		}
 	}
