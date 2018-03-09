@@ -101,7 +101,7 @@ function cm_normalize(input_buffer){
 // get index of first drop w/ threshold
 function get_index_abs_t(input_buffer){
 	// init
-	let threshold = 0.15;
+	let threshold = 0.1;
 
 	// maximum value in the input buffer
 	let max = Math.max.apply(Math, input_buffer); 
