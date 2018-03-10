@@ -123,7 +123,7 @@ function plot_1d(display, data){
 }
 
 function get_mic_input(){
-	navigator.mediaDevices.getUserMedia({audio:true, video:false},function(stream){
+	navigator.getUserMedia({audio:true, video:false},function(stream){
 		// on success
 		let source = audio_ctx.createMediaStreamSource(stream);
 		source.connect(audio_analyser);
