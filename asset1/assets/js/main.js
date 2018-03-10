@@ -1,6 +1,6 @@
-const AMP_THRESHOLD = 20; /* Threshold amplitude */
-const POS_SLOPE_THRESHOLD = 12; /* Threshold positive slope */
-const NEG_SLOPE_THRESHOLD = -12; /* Threshold negative slope */
+const AMP_THRESHOLD = 80; /* Threshold amplitude */
+const POS_SLOPE_THRESHOLD = 60; /* Threshold positive slope */
+const NEG_SLOPE_THRESHOLD = -60; /* Threshold negative slope */
 
 var recording = false; /* recording or not */
 var playing = false; /* playing or not */
